@@ -13,10 +13,10 @@ const shortid = require('shortid')
 const knex = require('knex')({
     client: 'mysql',
     connection: {
-    host : 'localhost',
-    user : 'kurl',
-    password : '42069',
-    database : 'urlshort'
+    host : 'hostname',
+    user : 'user',
+    password : 'password',
+    database : 'database'
     }
 });
 
