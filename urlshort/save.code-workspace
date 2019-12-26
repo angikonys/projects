@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"name": "workspaces",
+			"path": "E:\\workspaces"
+		},
+		{
+			"name": "ProjetD",
+			"path": "E:\\workspaces\\java\\menorpg\\ProjetD"
+		},
+		{
+			"name": "TriggerPvP",
+			"path": "E:\\TriggerPvP"
+		},
+		{
+			"name": "todolistopc",
+			"path": "E:\\todolistopc"
+		},
+		{
+			"name": "projects",
+			"path": "E:\\projects"
+		},
+		{
+			"path": "E:\\secretshit"
+		}
+	],
+	"settings": {}
+}

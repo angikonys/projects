@@ -1,5 +1,4 @@
 {
-    "client": "mysql",
     "connection": {
         "host": "hostname",
         "user": "user",

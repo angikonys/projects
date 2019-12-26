@@ -2,43 +2,15 @@
 
 const config = JSON.parse(localStorage.getItem("config"));
 
-module.exports = {
+const knex = require('knex')({
+    "client": "mysql",
+    "connection": config.connection
 
-  development: {
-    client: 'mysql',
-    connection: config.connection
-  },
+  
+});
 
-  staging: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
-  },
+module.exports = knex;
 
-  production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
-  }
 
-};
+
+

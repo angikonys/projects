@@ -1,0 +1,23 @@
+{
+  "name": "menoBot",
+  "version": "1.0.0",
+  "description": "a discord bot for menoria",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angikonys/projects/menoBot"
+  },
+  "keywords": [
+    "bot",
+    "menoria",
+    "useless"
+  ],
+  "author": "angiko",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
