@@ -1,5 +1,17 @@
 const express = require('express');
-const router = express.router;
+
+const router = express.Router();
+
+const url2 = require('url');
+
+const bodyParser = require('body-parser');
+
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
+
+const shortid = require('shortid')
+
+const knex = require('./knexfile').development;
+
 
 
 
@@ -13,7 +25,7 @@ router.get('/', function (req, res) {
 
         if (req.params.uuid.length > 10) res.redirect('/');
 
-        knex.select('url').from('urlshort').where('uuid', req.params.uuid).first().then(function (url) {
+        knex.select('url').from('link').where('uuid', req.params.uuid).first().then(function (url) {
 
             if (url == null) {
                 res.redirect('/');
