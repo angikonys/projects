@@ -7,6 +7,7 @@ exports.up = function(knex) {
         table.increments('id');
         table.text('url');
         table.text('title');
+        table.text('aliases')
         table.int('year');
         table.text('tags');
 
